@@ -13,15 +13,22 @@
   },
   "prettier": {
     "semi": false,
-    "singleQuote": true
+    "tabWidth": 2,
+    "arrowParent": "always",
+    "singleQuote": true,
+    "printWidth": 120,
+    "endOfLine": "auto"
   },
   "dependencies": {
+    "autoprefixer": "^10.2.1",
     "classnames": "^2.2.6",
     "next": "^10.0.5",
+    "postcss": "^8.2.4",
+    "postcss-nesting": "^7.0.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "sass": "^1.32.4",
-    "styled-jsx": "^3.4.1"
+    "styled-jsx": "^3.4.1",
+    "tailwindcss": "^2.0.2"
   },
   "next-unused": {
     "alias": {
@@ -56,6 +63,8 @@
     "@types/react": "^17.0.0",
     "@types/styled-jsx": "^2.2.8",
     "next-unused": "^0.0.3",
+    "postcss-flexbugs-fixes": "^5.0.2",
+    "postcss-preset-env": "^6.7.0",
     "prettier": "^2.2.1",
     "typescript": "^4.1.3"
   }

@@ -1,4 +1,6 @@
-import '@assets/main.scss'
+import '@assets/main.css'
+import '@assets/chrome-bug.css'
+
 import { FC, useEffect } from 'react'
 import type { AppProps } from 'next/app'
 
