@@ -1,0 +1,62 @@
+{
+  "name": "alphafly",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/khoale9098/alphafly.git",
+  "author": "<khoale9098@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "find:unused": "next-unused"
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true
+  },
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "next": "^10.0.5",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "sass": "^1.32.4",
+    "styled-jsx": "^3.4.1"
+  },
+  "next-unused": {
+    "alias": {
+      "@lib/*": [
+        "lib/*"
+      ],
+      "@config/*": [
+        "config/*"
+      ],
+      "@components/*": [
+        "components/*"
+      ],
+      "@utils/*": [
+        "utils/*"
+      ]
+    },
+    "debug": true,
+    "include": [
+      "components",
+      "lib",
+      "pages"
+    ],
+    "exclude": [],
+    "entrypoints": [
+      "pages"
+    ]
+  },
+  "devDependencies": {
+    "@next/bundle-analyzer": "^10.0.5",
+    "@types/classnames": "^2.2.11",
+    "@types/node": "^14.14.21",
+    "@types/react": "^17.0.0",
+    "@types/styled-jsx": "^2.2.8",
+    "next-unused": "^0.0.3",
+    "prettier": "^2.2.1",
+    "typescript": "^4.1.3"
+  }
+}
