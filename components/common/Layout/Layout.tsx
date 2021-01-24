@@ -1,12 +1,12 @@
 import { FC } from 'react'
-import Navbar from '@components/common/Navbar'
+import Navbar from '@components/common/header'
 import s from './Layout.module.css'
 
 const Layout: FC = ({ children }) => {
   return (
     <div className={s.container}>
       <Navbar />
-      <div className={s.content}>{children}</div>
+      <main className={s.content}>{children}</main>
     </div>
   )
 }

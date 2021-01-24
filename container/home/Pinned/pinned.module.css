@@ -1,0 +1,5 @@
+.special {
+  @apply flex border-t-4 border-solid mx-auto border-primary;
+  margin-top: 10vh;
+  margin-bottom: 25px;
+}

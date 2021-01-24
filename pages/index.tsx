@@ -1,9 +1,10 @@
-import Layout from '@components/common/Layout'
+import Layout from '@components/common/layout'
+import HomeUI from '@container/home'
 
 function Home() {
   return (
     <Layout>
-      <div>Welcome to my home</div>
+      <HomeUI />
     </Layout>
   )
 }

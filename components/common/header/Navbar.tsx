@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import s from './Navbar.module.css'
-import ButtonGlobal from '@components/common/Button'
+import ButtonGlobal from '@components/common/button'
 
 const Navbar = () => {
   return (

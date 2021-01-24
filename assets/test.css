@@ -476,7 +476,7 @@ body.global-hash-post-card-one-color .global-color::after {
 .global-underline:hover {
   background-size: 97% 40%;
 }
-.global {
+.global-button {
   font-family: var(--font-family-two);
   font-size: 14px;
   font-weight: var(--font-weight-two-semi-bold);
@@ -491,8 +491,8 @@ body.global-hash-post-card-one-color .global-color::after {
   border: 0;
   outline: 0;
 }
-.global::before,
-.global::after {
+.global-button::before,
+.global-button::after {
   position: absolute;
   top: 0;
   right: 0;
@@ -500,11 +500,11 @@ body.global-hash-post-card-one-color .global-color::after {
   left: 0;
   content: '';
 }
-.global::before {
+.global-button::before {
   z-index: -1;
   background-color: var(--color-details);
 }
-.global::after {
+.global-button::after {
   z-index: -2;
   transition-timing-function: ease;
   transition-duration: 0.15s;
@@ -512,7 +512,7 @@ body.global-hash-post-card-one-color .global-color::after {
   pointer-events: none;
   background-color: var(--color-two);
 }
-.global:hover::after {
+.global-button:hover::after {
   top: 6px;
   right: -6px;
   bottom: -6px;

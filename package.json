@@ -43,6 +43,9 @@
       ],
       "@utils/*": [
         "utils/*"
+      ],
+      "@container/*": [
+        "container/*"
       ]
     },
     "debug": true,
