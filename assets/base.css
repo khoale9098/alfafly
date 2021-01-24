@@ -1,3 +1,58 @@
-.layout {
-  background: rebeccapurple;
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,700;1,400;1,700&family=Source+Code+Pro:wght@500&family=Spartan:wght@500;600;700&display=swap');
+
+:root {
+  --primary: #f5df4d;
+  --secondary: #00a0b0;
+  --gray: #939597;
+  --fruit-dove: #cf5c78;
+  --cloud: #f0eee9;
+  --blue: #0070f3;
+
+  /*  */
+  --color-two: #141c3a;
+
+  --font-family-mulist: 'Mulish', sans-serif;
+  --font-family-source: 'Source Code Pro', monospace;
+  --font-eng: 'Spartan', sans-serif;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+  touch-action: manipulation;
+  font-feature-settings: 'case' 1, 'rlig' 1, 'calt' 0;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  @apply bg-white;
+}
+
+body {
+  position: relative;
+  height: 100%;
+  max-height: 100%;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-family-mulist);
+  @apply font-bold;
 }

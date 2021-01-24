@@ -1,0 +1,41 @@
+.wrap {
+  @apply flex items-center relative;
+  margin: 30px 0 60px 0;
+
+  & .logo {
+    @apply absolute top-0 cursor-pointer pointer-events-auto z-50;
+    left: calc(50% - 150px);
+    width: 300px;
+    flex: 1 0 auto;
+
+    & h1 {
+      @apply m-auto text-center;
+      & img {
+        max-height: 60px;
+        max-width: 300px;
+        @apply w-full;
+      }
+    }
+  }
+  & .nav {
+    @apply relative pointer-events-none font-eng font-bold;
+    flex: 0 1 100%;
+    & nav {
+      @apply w-full p-0 flex items-center;
+      & ul {
+        @apply flex-grow m-0 p-0 list-none break-normal;
+        & li {
+          @apply pointer-events-auto inline-block text-sm;
+          & a {
+            @apply relative p-0 leading-normal;
+            margin: 0 30px 0 0;
+          }
+        }
+      }
+      & ul + ul {
+        @apply flex items-center;
+        flex: 0 0 auto;
+      }
+    }
+  }
+}
