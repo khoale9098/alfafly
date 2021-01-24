@@ -1,1 +1,11 @@
-.layout {background-color: yellow}
+.container {
+  @apply relative flex flex-col;
+  padding: 0 55px;
+  height: 100%;
+  & .content {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: red;
+    min-height: 100%;
+  }
+}

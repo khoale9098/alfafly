@@ -1,0 +1,28 @@
+.global {
+  @apply text-sm border-none outline-none cursor-pointer leading-none font-semibold relative z-0 inline-block;
+}
+
+.global::before,
+.global::after {
+  @apply absolute inset-0;
+  content: '';
+}
+
+.global::before {
+  z-index: -1;
+  background-color: var(--secondary);
+}
+.global::after {
+  @apply pointer-events-none;
+  z-index: -2;
+  transition-timing-function: ease;
+  transition-duration: 0.15s;
+  transition-property: top, left, right, bottom;
+  background-color: var(--color-two);
+}
+.global:hover::after {
+  top: 6px;
+  right: -6px;
+  bottom: -6px;
+  left: 6px;
+}
