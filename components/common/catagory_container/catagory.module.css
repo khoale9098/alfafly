@@ -1,0 +1,13 @@
+.pinned {
+  @apply flex relative pt-5 flex-grow border-t-4 border-solid mx-auto mb-6 border-secondary;
+  margin-top: 10vh;
+  & h2 {
+    @apply font-medium absolute top-0 left-0 inline-block m-0 tracking-normal bg-secondary;
+    font-family: var(--font-family-sourcee);
+    font-size: 13px;
+    line-height: 1.4;
+    z-index: 1;
+
+    transform: translateY(-100%);
+  }
+}
