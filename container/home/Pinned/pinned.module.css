@@ -1,0 +1,11 @@
+.s {
+  flex: 1 0 25%;
+  padding: 10px 25px;
+  padding-left: 0px;
+  & h3 {
+    font-size: 20px;
+    @apply mt-0 font-bold;
+    margin-bottom: 1vh;
+    font-family: var(--font-eng);
+  }
+}

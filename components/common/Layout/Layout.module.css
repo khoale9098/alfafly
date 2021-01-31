@@ -3,9 +3,8 @@
   padding: 0 55px;
   height: 100%;
   & .content {
+    @apply m-auto min-h-full w-full;
     max-width: 1200px;
-    margin: 0 auto;
-    background: red;
-    min-height: 100%;
+    flex: 1 0 auto;
   }
 }

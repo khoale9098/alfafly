@@ -1,0 +1,27 @@
+.wrapper article {
+  @apply box-border px-4 py-2;
+  flex: 1 0 25%;
+  & h3 {
+    @apply mt-0 font-bold text-xl;
+    margin-bottom: 1vh;
+    font-family: var(--font-eng);
+  }
+  & h3 + .meta {
+    @apply m-0;
+  }
+  & .meta {
+    @apply text-xs relative w-full;
+    font-family: var(--font-family-source);
+  }
+}
+.wrapper article:first-of-type,
+.wrapper article:first-of-type:last-of-type {
+  @apply pl-0;
+}
+.wrapper article:first-of-type:last-of-type {
+  @apply border-l-0;
+}
+.wrapper article:not(:first-of-type):not(:last-of-type),
+.wrapper article:last-of-type {
+  border-left: 1px dashed #9ea1a4;
+}
