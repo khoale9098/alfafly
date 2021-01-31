@@ -597,7 +597,7 @@ body.global-hash-post-card-one-color .global-color::after {
   border-left: none;
 }
 .global-special article:not(:first-of-type):not(:last-of-type),
-.global-special article:last-of-type {
+.global-special article:lastz-of-type {
   border-left: var(--border) var(--color-three);
 }
 .global-special h3 {

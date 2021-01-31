@@ -41,10 +41,16 @@ body {
 }
 
 body {
-  position: relative;
-  height: 100%;
-  max-height: 100%;
-  margin: 0;
+  @apply relative h-full max-h-full m-0;
+}
+
+.global-underline:hover {
+  background-size: 97% 40%;
+}
+.global-underline {
+  padding-bottom: 0.2%;
+  transition: background-size 0.6s ease-out;
+  background: linear-gradient(var(--secondary), var(--secondary)) no-repeat left 123%/0 40%;
 }
 
 h1,
