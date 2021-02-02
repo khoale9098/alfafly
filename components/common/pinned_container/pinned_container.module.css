@@ -19,17 +19,11 @@
     margin-bottom: 1vh;
     font-family: var(--font-eng);
   }
-  & h3 + .meta {
-    @apply m-0;
-  }
-  & .meta {
-    @apply text-xs relative w-full;
-    font-family: var(--font-family-source);
-  }
 }
+
 .special article:first-of-type,
 .special article:first-of-type:last-of-type {
-  @apply pl-0;
+  @apply pl-4;
 }
 .special article:first-of-type:last-of-type {
   @apply border-l-0;
