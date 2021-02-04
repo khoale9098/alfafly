@@ -6,6 +6,7 @@ module.exports = {
       fontFamily: {
         sans: 'var(--font-family-mulist)',
         eng: 'var(--font-eng)',
+        mono: 'var(--font-family-source)',
       },
       backgroundColor: (theme) => ({
         ...theme('colors'),
