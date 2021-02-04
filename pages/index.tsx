@@ -1,4 +1,4 @@
-import Layout from '@components/common/layout'
+import Layout from '@components/layout'
 import HomeUI from '@container/home'
 
 function Home() {
