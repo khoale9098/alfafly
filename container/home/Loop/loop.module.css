@@ -1,0 +1,18 @@
+.wrap {
+  margin-bottom: 5vh;
+  animation: slideTopLoop 0.8s ease;
+  flex-wrap: wrap;
+  & article {
+    margin-top: 10vh;
+    flex-basis: 100%;
+  }
+}
+
+@keyframes slideTopLoop {
+  0% {
+    transform: translateY(70px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
