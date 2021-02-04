@@ -6,7 +6,9 @@ const Loop = () => {
     <section className="block">
       {/* animation slide to top */}
       <div className={s.wrap}>
-        <article className="max-w-full py-12"></article>
+        <article className="max-w-full py-12">
+          <div className="relative max-w-full box-border "></div>
+        </article>
       </div>
     </section>
   )
