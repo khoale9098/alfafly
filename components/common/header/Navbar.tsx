@@ -10,7 +10,8 @@ const Navbar = () => {
           <h1>
             <Link href="/">
               <a>
-                <img src="https://renge.fueko.net/content/images/2020/07/renge.svg" alt="" />
+                {/* Alfalyz */}
+                {/* <img src="https://renge.fueko.net/content/images/2020/07/renge.svg" alt="" /> */}
               </a>
             </Link>
           </h1>
@@ -41,7 +42,7 @@ const Navbar = () => {
             </ul>
             <ul>
               <li role="button">
-                <Link href="/signin">
+                <Link href="/">
                   <a>
                     <ButtonGlobal />
                   </a>
