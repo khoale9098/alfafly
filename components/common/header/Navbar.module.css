@@ -21,9 +21,9 @@
     @apply relative pointer-events-none font-eng font-bold;
     flex: 0 1 100%;
     & nav {
-      @apply w-full p-0 flex items-center;
+      @apply w-full p-0 flex items-center;  
       & ul {
-        @apply flex-grow m-0 p-0 list-none break-normal;
+        @apply hidden md:block flex-grow m-0 p-0 list-none break-normal;
         & li {
           @apply pointer-events-auto inline-block text-sm;
           & a {
