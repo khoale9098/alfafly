@@ -20,13 +20,9 @@
   & .nav {
     @apply relative pointer-events-none font-eng font-bold;
     flex: 0 1 100%;
-
     & nav {
       @apply w-full p-0 flex items-center;
       & ul {
-        @media (max-width: 500px) {
-          @apply hidden;
-        }
         @apply flex-grow m-0 p-0 list-none break-normal;
         & li {
           @apply pointer-events-auto inline-block text-sm;
