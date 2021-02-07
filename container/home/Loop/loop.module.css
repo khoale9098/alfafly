@@ -16,3 +16,12 @@
     transform: translateY(0);
   }
 }
+.mb_2vh{
+  margin-bottom: 2vh;
+}
+.max_w_1000{
+  max-width: 62.5rem;
+}
+.max_w_600{
+  max-width: 37.5rem;
+}

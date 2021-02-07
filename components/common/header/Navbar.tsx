@@ -10,7 +10,8 @@ const Navbar = () => {
           <h1>
             <Link href="/">
               <a>
-                <img src="https://renge.fueko.net/content/images/2020/07/renge.svg" alt="" />
+                {/* <img src="https://renge.fueko.net/content/images/2020/07/renge.svg" alt="" /> */}
+                <h1 className={s.alfaflyz}>Alfaflyz</h1>
               </a>
             </Link>
           </h1>
