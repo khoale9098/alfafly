@@ -1,8 +1,25 @@
 import Link from 'next/link'
 import ButtonGlobal from '@components/ui/button'
+import HamburgerIcon from '@components/common/hamburger_icon'
+import NavItem from '@components/common/nav_item'
 import s from './Navbar.module.css'
 
 const Navbar = () => {
+  const menu = [
+    {
+      name: 'Home',
+      href: '/',
+    },
+    {
+      name: 'About Me',
+      href: '/',
+    },
+    {
+      name: 'Blog',
+      href: '/',
+    },
+  ]
+
   return (
     <header className="box-border w-full block">
       <div className={s.wrap}>
@@ -10,35 +27,20 @@ const Navbar = () => {
           <h1>
             <Link href="/">
               <a>
-                {/* <img src="https://renge.fueko.net/content/images/2020/07/renge.svg" alt="" /> */}
-                <h1 className={s.alfaflyz}>Alfaflyz</h1>
+                {/* <h1 className={s.alfaflyz}>Alfaflyz</h1> */}
+                  <img src="https://renge.fueko.net/content/images/2020/07/renge.svg" alt="" />
+              
               </a>
             </Link>
           </h1>
         </div>
         <div className={s.nav}>
           <nav>
+            <HamburgerIcon />
             <ul>
-              <li>
-                <Link href="/link">
-                  <a>Home</a>
-                </Link>
-              </li>
-              <li>
-                <Link href="/link">
-                  <a>About Me</a>
-                </Link>
-              </li>
-              <li>
-                <Link href="/link">
-                  <a>Blog</a>
-                </Link>
-              </li>
-              <li>
-                <Link href="/link">
-                  <a>Let's learn</a>
-                </Link>
-              </li>
+              {menu.map(({ href, name }) => (
+                <NavItem name={name} href={href} key={name} />
+              ))}
             </ul>
             <ul>
               <li role="button">

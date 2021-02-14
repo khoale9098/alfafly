@@ -8,10 +8,18 @@
   margin: 30px 0 60px 0;
 
   & .logo {
-    @apply absolute top-0 cursor-pointer pointer-events-auto z-50;
-    left: calc(50% - 150px);
-    width: 300px;
+    @apply break-words inline-block cursor-pointer pointer-events-auto;
     flex: 1 0 auto;
+
+    @screen lg {
+      left: calc(50% - 150px);
+      width: 300px;
+      @apply absolute top-0 z-50;
+    }
+
+    @media (min-width: 481px) and (max-width: 1024px){
+      flex-basis: 50%;    
+    }
 
     & h1 {
       @apply m-auto text-center;
@@ -19,16 +27,24 @@
         max-height: 60px;
         max-width: 300px;
         @apply w-full;
+        @screen m-lg{
+          max-width: 108px;
+        }
       }
     }
   }
+
   & .nav {
     @apply relative pointer-events-none font-eng font-bold;
     flex: 0 1 100%;
+    @screen m-lg {
+      @apply text-right;
+      flex-basis: 50%;
+    }
     & nav {
-      @apply w-full p-0 flex items-center;
+      @apply w-full p-0 flex items-center m-lg:justify-end;
       & ul {
-        @apply flex-grow m-0 p-0 list-none break-normal;
+        @apply flex-grow m-0 p-0 list-none break-normal  m-lg:hidden;
         & li {
           @apply pointer-events-auto inline-block text-sm;
           & a {
@@ -38,14 +54,15 @@
         }
       }
       & ul + ul {
-        @apply flex items-center;
+        @apply flex items-center m-lg:hidden;
         flex: 0 0 auto;
       }
     }
   }
 }
 
-.alfaflyz{
+.alfaflyz {
+  font-weight: 500;
   font-family: Halimun;
   font-size: x-large;
   pointer-events: none;

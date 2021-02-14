@@ -1,6 +1,7 @@
 .pinned {
   @apply flex relative pt-5 flex-grow border-t-4 border-solid mx-auto mb-6;
   margin-top: 10vh;
+
   & h2 {
     @apply font-medium px-1 absolute top-0 left-0 inline-block m-0 tracking-normal;
     font-family: var(--font-family-source);
@@ -14,6 +15,7 @@
 .special article {
   @apply box-border px-4 py-2;
   flex: 1 0 25%;
+  
   & h3 {
     @apply mt-0 font-bold text-xl;
     margin-bottom: 1vh;
