@@ -23,7 +23,9 @@ const PinnedContainer: FC<{
   title: string
   className?: string
   style?: CSSProperties
+
 }> = ({ color, title, children, className = '' }) => {
+  
   return (
     <div className={classnames(s.pinned, s.special, styledBorder[color], className)}>
       <h2 className={styledBackground[color]}>

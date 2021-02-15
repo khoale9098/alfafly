@@ -1,5 +1,5 @@
 module.exports = {
-  // purge: ['./components/**/*.{js,ts,jsx,tsx}', './pages/**/*.{js,ts,jsx,tsx}'],
+  purge: ['./components/**/*.{js,ts,jsx,tsx}', './pages/**/*.{js,ts,jsx,tsx}'],
   darkMode: false,
   theme: {
     extend: {
@@ -37,6 +37,19 @@ module.exports = {
         cloud: 'var(--cloud)',
         blue: 'var(--blue)',
       }),
+
+      screens: {
+        sm: '641px',
+        md: '769px',
+        lg: '1025px',
+        xl: '1281px',
+        
+        'm-sm': { max: '640px' },
+        'm-md': { max: '768px' },
+        'm-lg': { max: '1024px' },
+        'm-xl': { max: '1280px' },
+        'm-2xl': { max: '1536px' },
+      },
     },
   },
 

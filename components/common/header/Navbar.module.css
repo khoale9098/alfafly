@@ -1,12 +1,23 @@
-.wrap {
-  @apply flex items-center relative;
-  margin: 30px 0 60px 0;
+@font-face {
+  font-family: Halimun;
+  src: url('/fonts/Halimun.ttf');
+}
 
+.wrap {
+  @apply flex items-center relative mt-7 mb-14 m-lg:mb-7;
   & .logo {
-    @apply absolute top-0 cursor-pointer pointer-events-auto z-50;
-    left: calc(50% - 150px);
-    width: 300px;
+    @apply break-words inline-block cursor-pointer pointer-events-auto;
     flex: 1 0 auto;
+
+    @screen lg {
+      left: calc(50% - 150px);
+      width: 300px;
+      @apply absolute top-0 z-50;
+    }
+
+    @media (min-width: 481px) and (max-width: 1024px) {
+      flex-basis: 50%;
+    }
 
     & h1 {
       @apply m-auto text-center;
@@ -14,18 +25,37 @@
         max-height: 60px;
         max-width: 300px;
         @apply w-full;
+        @screen m-lg {
+          max-width: 108px;
+        }
       }
     }
   }
+
   & .nav {
     @apply relative pointer-events-none font-eng font-bold;
     flex: 0 1 100%;
+    @screen m-lg {
+      @apply text-right;
+      flex-basis: 50%;
+    }
     & nav {
-      @apply w-full p-0 flex items-center;  
+      @apply w-full p-0 flex m-lg:flex-col items-center;
+      @screen m-lg {
+        @apply fixed top-0 overflow-y-hidden h-full py-5 px-7 bg-white z-10;
+        width: 300px;
+        box-shadow: 0 0 36px 0 rgb(22 25 28 / 17%);
+        -webkit-transition: all .4s cubic-bezier(.165,.84,.44,1);
+        transition: all .4s cubic-bezier(.165,.84,.44,1);
+      }
+
       & ul {
-        @apply hidden md:block flex-grow m-0 p-0 list-none break-normal;
+        @apply flex-grow m-0 p-0 list-none break-normal ;
+        @screen m-lg{
+          @apply m-0 p-0 flex w-full flex-col justify-start;
+        }
         & li {
-          @apply pointer-events-auto inline-block text-sm;
+          @apply text-left pointer-events-auto inline-block text-sm m-lg:py-3;
           & a {
             @apply relative p-0 leading-normal;
             margin: 0 30px 0 0;
@@ -33,9 +63,16 @@
         }
       }
       & ul + ul {
-        @apply flex items-center;
+        @apply flex items-center m-lg:flex-col m-lg:items-start;
         flex: 0 0 auto;
       }
     }
   }
+}
+
+.alfaflyz {
+  font-weight: 500;
+  font-family: Halimun;
+  font-size: x-large;
+  pointer-events: none;
 }

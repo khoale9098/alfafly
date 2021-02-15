@@ -1,7 +1,12 @@
 .container {
-  @apply relative flex flex-col;
+  @apply relative flex flex-col h-full;
   padding: 0 55px;
   height: 100%;
+
+  @screen m-lg {
+    padding: 0 6%;
+  }
+
   & .content {
     @apply m-auto min-h-full w-full;
     max-width: 1200px;

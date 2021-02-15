@@ -2,10 +2,21 @@
   margin-bottom: 5vh;
   animation: slideTopLoop 0.8s ease;
   flex-wrap: wrap;
+
   & article {
     margin-top: 10vh;
     flex-basis: 100%;
+
+    & .item {
+      @apply relative w-full box-border flex;
+    }
   }
+}
+
+.item::before {
+  position: absolute;
+  width: 100%;
+  content: '';
 }
 
 @keyframes slideTopLoop {
@@ -15,4 +26,13 @@
   to {
     transform: translateY(0);
   }
+}
+.mb_2vh {
+  margin-bottom: 2vh;
+}
+.max_w_1000 {
+  max-width: 62.5rem;
+}
+.max_w_600 {
+  max-width: 37.5rem;
 }

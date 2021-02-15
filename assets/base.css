@@ -62,3 +62,7 @@ h6 {
   font-family: var(--font-family-mulist);
   @apply font-bold;
 }
+
+.w_change_transform {
+  will-change: transform;
+}
