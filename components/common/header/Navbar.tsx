@@ -30,7 +30,7 @@ const Navbar = () => {
           <h1>
             <Link href="/">
               <a>
-              ~  <h1 className={s.alfaflyz}>Alfaflyz</h1>
+                <h1 className={s.alfaflyz}>Alfaflyz</h1>
                 {/* <img src="https://renge.fueko.net/content/images/2020/07/renge.svg" alt="" /> */}
               </a>
             </Link>

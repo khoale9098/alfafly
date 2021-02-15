@@ -19,7 +19,7 @@ const Loop = () => {
                 <Link href="/">
                   <a
                     className={classnames(
-                      'text-3xl font-bold font-eng pt-2 global-underline cursor-pointer',
+                      'text-4xl font-bold font-eng pt-2 global-underline cursor-pointer',
                       s.max_w_1000,
                       s.mb_2vh
                     )}
@@ -30,8 +30,9 @@ const Loop = () => {
                 </Link>
               </h2>
               <p className={classnames(s.max_w_600, 'text-sm font-eng pt-8 leading-8')}>
-                Quae quo sunt excelsiores, eo dant clariora indicia naturae. Sed haec quidem liberius ab eo dicuntur et
-                saepius. Et ille ridens video, inquit, quid agas tum ille timide vel potius verecunde.
+               - ブログは3月中旬にリリースされます <br/>
+               - Blog will be released in mid-March <br/>
+               - Le blog sortira à la mi-mars
               </p>
               <div className="flex">
                 <Hastag title="story" />

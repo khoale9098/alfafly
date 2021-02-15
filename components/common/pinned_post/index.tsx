@@ -27,7 +27,8 @@ const PinnedPost: FC<{
       </div> */}
       <div className="m-0 flex relative w-full text-xs mt-2 font-mono">
         <a className="px-1">#creative</a>
-        <a className="px-1">#review</a>
+        <a className="px-1">#nonsense</a>
+        <a className="px-1">#ui/ux</a>
         <a className="px-1">#coding</a>
       </div>
     </article>
