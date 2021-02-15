@@ -4,7 +4,7 @@ import Loop from '@container/home/Loop'
 const HomeUI = () => {
   return (
     <div>
-      {/* <Pinned /> */}
+      <Pinned />
       <Loop />
     </div>
   )

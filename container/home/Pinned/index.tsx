@@ -3,16 +3,16 @@ import PinnedPost from '@components/common/pinned_post'
 
 const Pinned = () => {
   return (
-    <section className="flex">
-      <div className="w-3/12 flex ">
+    <section className="flex m-lg:flex-col flex-row">
+      <div className="w-3/12 flex m-lg:w-full">
         <PinnedContainer title="Annoucement" color="primary">
           <PinnedPost title="Xin chào mình là Khoa?" />
         </PinnedContainer>
       </div>
-      <div className="w-9/12 ml-8">
+      <div className="w-9/12 ml-8 m-lg:w-full m-lg:ml-0">
         <PinnedContainer title="Don't miss it" color="secondary">
           <PinnedPost
-            title="Thử Rồi Thích: 5 Bước thay đổi thói quen không cần nhiều ý chí"
+            title="Design is a mirror, reflecting the culture"
             img="https://vietcetera.com/uploads/images/02-feb-2021/20201210-travanconnong-01-2-536x356.jpg"
           />
           <PinnedPost

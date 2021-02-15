@@ -5,14 +5,12 @@ import { CommonBurgerProps } from './Burger'
 export const Spin = ((props) => (
   <Burger {...props} render={(o) => (
     <div
-      className="hamburger-react"
-      aria-label={o.label}
-      data-testid="spin"
       onClick={o.handler}
       onKeyUp={(e) => e.key === 'Enter' && o.handler()}
       role="button"
       style={{
         ...o.burgerStyles,
+        marginLeft: 'auto',
         transform: `${o.isToggled
           ? `rotate(${180 * (o.isLeft ? -1 : 1)}deg)`
           : 'none'

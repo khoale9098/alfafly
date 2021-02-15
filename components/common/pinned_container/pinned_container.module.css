@@ -1,6 +1,9 @@
 .pinned {
-  @apply flex relative pt-5 flex-grow border-t-4 border-solid mx-auto mb-6;
+  @apply flex relative pt-5 flex-grow border-t-4 border-solid mx-auto mb-6 m-md:flex-col;
   margin-top: 10vh;
+  @screen m-lg {
+    margin-top: 3vh;
+  }
 
   & h2 {
     @apply font-medium px-1 absolute top-0 left-0 inline-block m-0 tracking-normal;
@@ -15,7 +18,7 @@
 .special article {
   @apply box-border px-4 py-2;
   flex: 1 0 25%;
-  
+
   & h3 {
     @apply mt-0 font-bold text-xl;
     margin-bottom: 1vh;
@@ -23,14 +26,16 @@
   }
 }
 
-.special article:first-of-type,
-.special article:first-of-type:last-of-type {
-  @apply pl-4;
-}
-.special article:first-of-type:last-of-type {
-  @apply border-l-0;
-}
-.special article:not(:first-of-type):not(:last-of-type),
-.special article:last-of-type {
-  border-left: 1px dashed #9ea1a4;
+@screen lg {
+  .special article:first-of-type,
+  .special article:first-of-type:last-of-type {
+    @apply pl-4;
+  }
+  .special article:first-of-type:last-of-type {
+    @apply border-l-0;
+  }
+  .special article:not(:first-of-type):not(:last-of-type),
+  .special article:last-of-type {
+    border-left: 1px dashed #9ea1a4;
+  }
 }

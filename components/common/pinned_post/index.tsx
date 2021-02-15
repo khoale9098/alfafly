@@ -14,7 +14,7 @@ const PinnedPost: FC<{
     <article>
       <div className={classnames(s.iimage)}>
         <div>
-          <img src={img} alt="" />
+          <img className="w-full" src={img} alt="" />
         </div>
       </div>
       <h3 className="pt-4">
@@ -22,9 +22,9 @@ const PinnedPost: FC<{
           <a className="global-underline">{title}</a>
         </Link>
       </h3>
-      <div className="text-sm relative w-full font-mono">
+      {/* <div className="text-sm relative w-full font-mono">
         <a>Khoa Le and others</a>
-      </div>
+      </div> */}
       <div className="m-0 flex relative w-full text-xs mt-2 font-mono">
         <a className="px-1">#creative</a>
         <a className="px-1">#review</a>
