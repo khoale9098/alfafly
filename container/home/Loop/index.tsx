@@ -6,33 +6,29 @@ import s from './loop.module.css'
 const Loop = () => {
   return (
     <section className="block">
-      {/* animation slide to top */}
       <div className={s.wrap}>
         <article className="max-w-full py-12">
           <div className={s.item}>
             <div className="w_change_transform">
               <div className={classnames(s.mb_2vh, 'font-mono text-sm relative w-full font-normal')}>
-                {/* A year ago by Khoa Le and Megan Anderson - 3 minutes read */}
-                
+                A year ago by Khoa Le and Megan Anderson - 3 minutes read
               </div>
               <h2>
                 <Link href="/">
                   <a
                     className={classnames(
-                      'text-4xl font-bold font-eng pt-2 global-underline cursor-pointer',
+                      'text-6xl font-bold font-eng pt-2 global-underline cursor-pointer',
                       s.max_w_1000,
                       s.mb_2vh
                     )}
                   >
-                    {/* Now we’re getting somewhere */}
-                    Comming Soon
+                    Now we’re getting somewhere
                   </a>
                 </Link>
               </h2>
               <p className={classnames(s.max_w_600, 'text-sm font-eng pt-8 leading-8')}>
-               - ブログは3月中旬にリリースされます <br/>
-               - Blog will be released in mid-March <br/>
-               - Le blog sortira à la mi-mars
+                - ブログは3月中旬にリリースされます <br />
+                - Blog will be released in mid-March <br />- Le blog sortira à la mi-mars
               </p>
               <div className="flex">
                 <Hastag title="story" />
@@ -40,6 +36,12 @@ const Loop = () => {
                 <Hastag title="creative" />
                 <Hastag title="nonsense" />
               </div>
+            </div>
+            <div className={s.img}>
+              <img
+                src="https://vietcetera.com/uploads/images/29-dec-2020/feature-20smistakes-536x356-1609233732881.jpg"
+                alt=""
+              />
             </div>
           </div>
         </article>

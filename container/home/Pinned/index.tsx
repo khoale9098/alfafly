@@ -9,7 +9,7 @@ const Pinned = () => {
           <PinnedPost title="Xin chào mình là Khoa?" />
         </PinnedContainer>
       </div>
-      {/* <div className="w-9/12 ml-8 m-lg:w-full m-lg:ml-0">
+      <div className="w-9/12 ml-8 m-lg:w-full m-lg:ml-0">
         <PinnedContainer title="Don't miss it" color="secondary">
           <PinnedPost
             title="Design is a mirror, reflecting the culture"
@@ -21,10 +21,11 @@ const Pinned = () => {
           />
           <PinnedPost
             title="Everything has beauty, but not everyone sees it"
-            img="https://vietcetera.com/uploads/images/01-feb-2021/0201-trt-habit-feature-536x356-1612170125881.jpg"
+            // img="https://renge.fueko.net/content/images/size/w260/2020/06/photo-1588612005960-a382b1eca714.jpeg"
+            img="https://vietcetera.com/wp-content/uploads/2020/04/Three-equations-feature-536x356.jpg"
           />
         </PinnedContainer>
-      </div> */}
+      </div>
     </section>
   )
 }

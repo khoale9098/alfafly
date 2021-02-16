@@ -14,7 +14,7 @@ const PinnedPost: FC<{
     <article>
       <div className={classnames(s.iimage)}>
         <div>
-          <img className="w-full" src={img} alt="" />
+          <img className="m-lg:w-full" src={img} alt="" />
         </div>
       </div>
       <h3 className="pt-4">

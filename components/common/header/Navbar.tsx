@@ -30,8 +30,7 @@ const Navbar = () => {
           <h1>
             <Link href="/">
               <a>
-                <h1 className={s.alfaflyz}>Alfaflyz</h1>
-                {/* <img src="https://renge.fueko.net/content/images/2020/07/renge.svg" alt="" /> */}
+                <img src="/img/logo.png" alt="" />
               </a>
             </Link>
           </h1>
@@ -53,7 +52,9 @@ const Navbar = () => {
                 </Link>
               </li>
               <li>
-                <a>Sign in</a>
+                <Link href="/">
+                  <a>Sign in</a>
+                </Link>
               </li>
             </ul>
           </nav>

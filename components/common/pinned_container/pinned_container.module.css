@@ -16,7 +16,7 @@
 }
 
 .special article {
-  @apply box-border px-4 py-2;
+  @apply box-border px-4 py-2 m-lg:mt-4;
   flex: 1 0 25%;
 
   & h3 {

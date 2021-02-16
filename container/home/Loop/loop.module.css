@@ -9,14 +9,37 @@
 
     & .item {
       @apply relative w-full box-border flex;
+      & .img{
+        flex: 0 0 40%;
+        @apply relative z-10;
+
+      }
     }
   }
 }
 
-.item::before {
-  position: absolute;
-  width: 100%;
+.item::before, .item::after{
+  @apply absolute w-full;
   content: '';
+}
+.item::before {
+  top: -6vh;
+  right: 0;
+  z-index: 1;
+  bottom: -4vh;
+  max-width: 55%;
+  opacity: 0.5;
+  background-image: radial-gradient(#141c3a 6%,transparent 0);
+  background-size: 28px 28px;
+}
+
+.item::after{
+  background-color: #ff4a97;
+  top: -7vh;
+  right: 70px;
+  bottom: 4vh;
+  z-index: 0;
+  max-width: 500px;
 }
 
 @keyframes slideTopLoop {
