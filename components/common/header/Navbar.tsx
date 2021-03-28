@@ -1,8 +1,9 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import classnames from 'classnames'
+import Logo from '@components/common/logo'
 import ButtonGlobal from '@components/ui/button'
-import HamburgerIcon from '@components/common/hamburger_icon'
+import HamburgerIcon from '@components/common/icons/hamburger'
 import NavItem from '@components/common/nav_item'
 import s from './Navbar.module.css'
 
@@ -26,16 +27,7 @@ const Navbar = () => {
   return (
     <header className="box-border w-full block">
       <div className={s.wrap}>
-        <div className={s.logo}>
-          <h1>
-            <Link href="/">
-              <a>
-                <h1 className={s.alfaflyz}>Alfaflyz</h1>
-                {/* <img src="https://renge.fueko.net/content/images/2020/07/renge.svg" alt="" /> */}
-              </a>
-            </Link>
-          </h1>
-        </div>
+        <Logo className={s.logo} />
         <div className={s.nav}>
           <HamburgerIcon isOpen={isOpenNav} setOpen={setOpenNav} />
           <nav className={classnames(!isOpenNav ? '-left-full' : 'left-0')}>

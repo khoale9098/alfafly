@@ -5,6 +5,7 @@
 
 .wrap {
   @apply flex items-center relative mt-7 mb-14 m-lg:mb-7;
+
   & .logo {
     @apply break-words inline-block cursor-pointer pointer-events-auto;
     flex: 1 0 auto;
@@ -39,19 +40,19 @@
       @apply text-right;
       flex-basis: 50%;
     }
+
     & nav {
       @apply w-full p-0 flex m-lg:flex-col items-center;
       @screen m-lg {
         @apply fixed top-0 overflow-y-hidden h-full py-5 px-7 bg-white z-10;
         width: 300px;
         box-shadow: 0 0 36px 0 rgb(22 25 28 / 17%);
-        -webkit-transition: all .4s cubic-bezier(.165,.84,.44,1);
-        transition: all .4s cubic-bezier(.165,.84,.44,1);
+        transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
       }
 
       & ul {
-        @apply flex-grow m-0 p-0 list-none break-normal ;
-        @screen m-lg{
+        @apply flex-grow m-0 p-0 list-none break-normal;
+        @screen m-lg {
           @apply m-0 p-0 flex w-full flex-col justify-start;
         }
         & li {
@@ -68,11 +69,4 @@
       }
     }
   }
-}
-
-.alfaflyz {
-  font-weight: 500;
-  font-family: Halimun;
-  font-size: x-large;
-  pointer-events: none;
 }

@@ -8,6 +8,7 @@ const Pinned = () => {
         <PinnedContainer title="Annoucement" color="primary">
           <PinnedPost title="Xin chào mình là Khoa?" />
         </PinnedContainer>
+        
       </div>
       {/* <div className="w-9/12 ml-8 m-lg:w-full m-lg:ml-0">
         <PinnedContainer title="Don't miss it" color="secondary">

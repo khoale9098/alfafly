@@ -30,9 +30,8 @@ const Loop = () => {
                 </Link>
               </h2>
               <p className={classnames(s.max_w_600, 'text-sm font-eng pt-8 leading-8')}>
-               - ブログは3月中旬にリリースされます <br/>
-               - Blog will be released in mid-March <br/>
-               - Le blog sortira à la mi-mars
+               - ブログは6月中旬にリリースされます <br/>
+               - Blog will be released in mid-June <br/>
               </p>
               <div className="flex">
                 <Hastag title="story" />
