@@ -1,0 +1,10 @@
+.footerSection {
+  padding-top: 7vh;
+  border-color: #9ea1a4;
+  padding-bottom: 6vh;
+  max-width: 1200px;
+  & .data {
+    flex: 999 0 30%;
+    padding-right: 5%;
+  }
+}
