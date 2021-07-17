@@ -1,11 +1,16 @@
-import cn from 'classnames'
-import Logo from '@components/common/logo'
-import { ImLinkedin, ImGithub, ImFacebook } from 'react-icons/im'
-import s from './Footer.module.css'
+import cn from 'classnames';
+import Logo from '@components/common/logo';
+import { ImLinkedin, ImGithub, ImFacebook } from 'react-icons/im';
+import s from './Footer.module.css';
 
 const Footer = () => {
   return (
-    <footer className={cn('h-12 bg-white border-t border-dashed m-auto w-full', s.footerSection)}>
+    <footer
+      className={cn(
+        'h-12 bg-white border-t border-dashed m-auto w-full',
+        s.footerSection
+      )}
+    >
       <div className="w-full items-start m-auto flex">
         <div className={s.data}>
           <Logo className="max-w-sm mb-4" />
@@ -15,18 +20,36 @@ const Footer = () => {
             {/* A blog, functional theme for running a paid-membership publication on Ghost. */}
           </p>
           <div className="max-w-sm my-7 flex">
-            <div style={{ margin: '0 7px 7px 0', width: '32px', height: '32px' }}>
-              <a href="https://www.linkedin.com/in/khoale9098/" target="_blank">
+            <div
+              style={{ margin: '0 7px 7px 0', width: '32px', height: '32px' }}
+            >
+              <a
+                href="https://www.linkedin.com/in/khoale9098/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <ImLinkedin size={24} />
               </a>
             </div>
-            <div style={{ margin: '0 7px 7px 0', width: '32px', height: '32px' }}>
-              <a href="http://github.com/khoale9098" target="_blank">
+            <div
+              style={{ margin: '0 7px 7px 0', width: '32px', height: '32px' }}
+            >
+              <a
+                href="http://github.com/khoale9098"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <ImGithub size={24} />
               </a>
             </div>
-            <div style={{ margin: '0 7px 7px 0', width: '32px', height: '32px' }}>
-              <a href="https://www.facebook.com/khoale.stand.up/" target="_blank">
+            <div
+              style={{ margin: '0 7px 7px 0', width: '32px', height: '32px' }}
+            >
+              <a
+                href="https://www.facebook.com/khoale.stand.up/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <ImFacebook size={24} />
               </a>
             </div>
@@ -34,7 +57,7 @@ const Footer = () => {
         </div>
       </div>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

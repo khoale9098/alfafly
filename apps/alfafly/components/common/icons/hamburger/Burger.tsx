@@ -10,7 +10,7 @@ export interface CommonBurgerProps {
   easing?: string
   hideOutline?: boolean
   label?: string
-  onToggle?: (toggled: boolean) => any
+  onToggle?: (toggled: boolean) => void
   rounded?: boolean
   size?: number
   toggle?: Dispatch<SetStateAction<boolean>>
