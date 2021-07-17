@@ -1,75 +1,87 @@
 {
-  "name": "alphafly",
-  "version": "1.0.0",
-  "main": "index.js",
-  "repository": "https://github.com/khoale9098/alphafly.git",
-  "author": "<khoale9098@gmail.com>",
+  "name": "alfafly",
+  "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "find:unused": "next-unused"
+    "nx": "nx",
+    "start": "nx serve",
+    "build": "nx build",
+    "test": "nx test",
+    "lint": "nx workspace-lint && nx lint",
+    "e2e": "nx e2e",
+    "affected:apps": "nx affected:apps",
+    "affected:libs": "nx affected:libs",
+    "affected:build": "nx affected:build",
+    "affected:e2e": "nx affected:e2e",
+    "affected:test": "nx affected:test",
+    "affected:lint": "nx affected:lint",
+    "affected:dep-graph": "nx affected:dep-graph",
+    "affected": "nx affected",
+    "format": "nx format:write",
+    "format:write": "nx format:write",
+    "format:check": "nx format:check",
+    "update": "nx migrate latest",
+    "workspace-generator": "nx workspace-generator",
+    "dep-graph": "nx dep-graph",
+    "help": "nx help"
   },
-  "prettier": {
-    "semi": false,
-    "tabWidth": 2,
-    "arrowParent": "always",
-    "singleQuote": true,
-    "printWidth": 120,
-    "endOfLine": "auto"
-  },
+  "private": true,
   "dependencies": {
-    "autoprefixer": "^10.2.6",
-    "classnames": "^2.2.6",
-    "next": "^11.0.1",
+    "@nrwl/next": "12.5.8",
+    "autoprefixer": "^10.3.1",
+    "classnames": "^2.3.1",
+    "core-js": "^3.6.5",
+    "document-register-element": "1.13.1",
+    "next": "10.2.0",
     "postcss": "^8.3.5",
-    "postcss-nesting": "^7.0.1",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
+    "postcss-nesting": "^8.0.1",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
     "react-icons": "^4.2.0",
-    "styled-jsx": "^3.4.1",
-    "tailwindcss": "^2.0.2"
-  },
-  "next-unused": {
-    "alias": {
-      "@lib/*": [
-        "lib/*"
-      ],
-      "@config/*": [
-        "config/*"
-      ],
-      "@components/*": [
-        "components/*"
-      ],
-      "@utils/*": [
-        "utils/*"
-      ],
-      "@container/*": [
-        "container/*"
-      ]
-    },
-    "debug": true,
-    "include": [
-      "components",
-      "lib",
-      "pages"
-    ],
-    "exclude": [],
-    "entrypoints": [
-      "pages"
-    ]
+    "regenerator-runtime": "0.13.7",
+    "tslib": "^2.0.0"
   },
   "devDependencies": {
-    "@next/bundle-analyzer": "^10.0.5",
-    "@types/classnames": "^2.2.11",
-    "@types/node": "^14.14.21",
-    "@types/react": "^17.0.0",
-    "@types/styled-jsx": "^2.2.8",
-    "next-unused": "^0.0.3",
+    "@babel/core": "7.12.13",
+    "@babel/preset-env": "7.12.13",
+    "@babel/preset-react": "7.12.13",
+    "@babel/preset-typescript": "7.12.13",
+    "@next/bundle-analyzer": "^11.0.1",
+    "@nrwl/cli": "12.5.8",
+    "@nrwl/cypress": "12.5.8",
+    "@nrwl/eslint-plugin-nx": "12.5.8",
+    "@nrwl/jest": "12.5.8",
+    "@nrwl/linter": "12.5.8",
+    "@nrwl/react": "12.5.8",
+    "@nrwl/tao": "12.5.8",
+    "@nrwl/web": "12.5.8",
+    "@nrwl/workspace": "12.5.8",
+    "@testing-library/react": "11.2.6",
+    "@types/classnames": "^2.3.1",
+    "@types/jest": "26.0.8",
+    "@types/node": "14.14.33",
+    "@types/react": "17.0.3",
+    "@types/react-dom": "17.0.3",
+    "@typescript-eslint/eslint-plugin": "4.19.0",
+    "@typescript-eslint/parser": "4.19.0",
+    "babel-jest": "26.2.2",
+    "cypress": "^7.3.0",
+    "dotenv": "8.2.0",
+    "eslint": "7.22.0",
+    "eslint-config-prettier": "8.1.0",
+    "eslint-plugin-cypress": "^2.10.3",
+    "eslint-plugin-import": "2.22.1",
+    "eslint-plugin-jsx-a11y": "6.4.1",
+    "eslint-plugin-react": "7.23.1",
+    "eslint-plugin-react-hooks": "4.2.0",
+    "jest": "27.0.3",
+    "next-unused": "^0.0.6",
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-preset-env": "^6.7.0",
-    "prettier": "^2.2.1",
-    "typescript": "^4.1.3"
+    "prettier": "^2.3.1",
+    "tailwindcss": "^2.2.4",
+    "ts-jest": "27.0.3",
+    "ts-node": "~9.1.1",
+    "typescript": "~4.2.4"
   }
 }

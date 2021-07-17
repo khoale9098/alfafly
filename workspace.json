@@ -1,0 +1,99 @@
+{
+  "version": 2,
+  "projects": {
+    "alfafly": {
+      "root": "apps/alfafly",
+      "sourceRoot": "apps/alfafly",
+      "projectType": "application",
+      "targets": {
+        "build": {
+          "executor": "@nrwl/next:build",
+          "outputs": ["{options.outputPath}"],
+          "options": {
+            "root": "apps/alfafly",
+            "outputPath": "dist/apps/alfafly"
+          },
+          "configurations": {
+            "production": {}
+          }
+        },
+        "serve": {
+          "executor": "@nrwl/next:server",
+          "options": {
+            "buildTarget": "alfafly:build",
+            "dev": true
+          },
+          "configurations": {
+            "production": {
+              "buildTarget": "alfafly:build:production",
+              "dev": false
+            }
+          }
+        },
+        "export": {
+          "executor": "@nrwl/next:export",
+          "options": {
+            "buildTarget": "alfafly:build:production"
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/apps/alfafly"],
+          "options": {
+            "jestConfig": "apps/alfafly/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["apps/alfafly/**/*.{ts,tsx,js,jsx}"]
+          }
+        }
+      }
+    },
+    "alfafly-e2e": {
+      "root": "apps/alfafly-e2e",
+      "sourceRoot": "apps/alfafly-e2e/src",
+      "projectType": "application",
+      "targets": {
+        "e2e": {
+          "executor": "@nrwl/cypress:cypress",
+          "options": {
+            "cypressConfig": "apps/alfafly-e2e/cypress.json",
+            "tsConfig": "apps/alfafly-e2e/tsconfig.e2e.json",
+            "devServerTarget": "alfafly:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "alfafly:serve:production"
+            }
+          }
+        },
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["apps/alfafly-e2e/**/*.{js,ts}"]
+          }
+        }
+      }
+    }
+  },
+  "cli": {
+    "defaultCollection": "@nrwl/next"
+  },
+  "generators": {
+    "@nrwl/react": {
+      "application": {
+        "babel": true
+      }
+    },
+    "@nrwl/next": {
+      "application": {
+        "style": "css",
+        "linter": "eslint"
+      }
+    }
+  },
+  "defaultProject": "alfafly"
+}

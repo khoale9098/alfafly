@@ -1,5 +1,4 @@
 module.exports = {
-  // purge: ['./components/**/*.{js,ts,jsx,tsx}', './pages/**/*.{js,ts,jsx,tsx}'],
   darkMode: false,
   theme: {
     extend: {
@@ -43,7 +42,7 @@ module.exports = {
         md: '769px',
         lg: '1025px',
         xl: '1281px',
-        
+
         'm-sm': { max: '640px' },
         'm-md': { max: '768px' },
         'm-lg': { max: '1024px' },
@@ -54,4 +53,4 @@ module.exports = {
   },
 
   plugins: [],
-}
+};
