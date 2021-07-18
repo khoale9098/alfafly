@@ -33,6 +33,12 @@
     "alfafly-e2e": {
       "tags": [],
       "implicitDependencies": ["alfafly"]
+    },
+    "api": {
+      "tags": []
+    },
+    "api-interfaces": {
+      "tags": []
     }
   }
 }
